@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="acessibilidade-container" id="menu-acessibilidade" aria-label="Menu de Acessibilidade">
+        <button id="btn-mover-menu" class="btn-acessibilidade" title="Mudar lado do menu" aria-label="Mudar lado do menu">⇄</button>
+        <button id="btn-aumentar-fonte" class="btn-acessibilidade" title="Aumentar Fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-diminuir-fonte" class="btn-acessibilidade" title="Diminuir Fonte" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-alternar-tema" class="btn-acessibilidade" title="Alternar Modo Escuro/Claro" aria-label="Alternar modo escuro ou claro">◑</button>
+        <button id="btn-ler-voz" class="btn-acessibilidade" title="Ouvir Conteúdo" aria-label="Ouvir conteúdo principal por voz">🔊</button>
+    </nav>
+
+    <header class="topo-ia-container">
+        <div class="topo-conteudo">
+            <div class="ia-info-bloco">
+                <span class="badge-tech">Inteligência Artificial &amp; Tecnologia</span>
+                <h2>Vamos ver melhor com AI</h2>
+                <p>O futuro do Brasil integrado a aparelhos tecnológicos de última geração para monitoramento ecológico.</p>
+            </div>
+            <form class="formulario-inscricao" id="form-inscricao" novalidate>
+                <label for="email-inscricao" class="sr-only">Seu e-mail profissional</label>
+                <input type="email" id="email-inscricao" placeholder="Seu e-mail para novidades tecnológicas" required>
+                <button type="submit" class="btn-moderno">Inscrever-se</button>
+            </form>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-conteudo">
+                <span class="tagline">Agro Forte, Futuro Sustentável</span>
+                <h1 class="titulo-principal">A tecnologia agrícola e sustentável transforma o Brasil</h1>
+                <p class="titulo-secundario">Equilibrando a máxima produtividade do campo com a preservação digital e ecológica do nosso ecossistema.</p>
+            </div>
+        </section>
+
+        <section class="conteudo-section">
+            <div class="texto-narrativo">
+                <h2>O Equilíbrio entre Produção e Meio Ambiente</h2>
+                <p>A agricultura sustentável é o caminho para mover o Brasil, equilibrar e o destacar. Devemos focar no equilíbrio entre a produção e o meio ambiente, e em como podemos ter grande rendimento sem prejudicar o meio ambiente, sendo assim visando sempre utilizar aquelas soluções que já existem.</p>
+                <p>Como por exemplo, colocar aves em meio a plantações para controlar os insetos e adubar o solo, até então não sendo muito comuns as táticas de preservação do meio ambiente integradas. É necessário solicitar pesquisas para que novas soluções sejam propostas e assim com elas um futuro mais sustentável.</p>
+            </div>
+
+            <div class="grid-imagens-container">
+                <div class="card-imagem-wrapper">
+                    <div class="imagem"> <img src="Foto1.png" alt="Desenho moderno ilustrando aves em meio a plantações controlando pragas naturalmente"> </div>
+                    <div class="card-info">
+                        <h3>Manejo Biológico</h3>
+                        <p>Integração de fauna nativa para adubamento e controle natural de insetos.</p>
+                    </div>
+                </div>
+
+                <div class="card-imagem-wrapper">
+                    <div class="imagem"> <img src="Foto2.png" alt="Interface digital mostrando análise de solo em tempo real por sensores"> </div>
+                    <div class="card-info">
+                        <h3>Monitoramento Digital</h3>
+                        <p>Aparelhos tecnológicos gerando dados precisos sem agredir o solo agrícola.</p>
+                    </div>
+                </div>
+
+                <div class="card-imagem-wrapper">
+                    <div class="imagem"> <img src="Foto3.png" alt="Infográfico minimalista exibindo dados de rendimento agrícola sustentável no Brasil"> </div>
+                    <div class="card-info">
+                        <h3>Grande Rendimento</h3>
+                        <p>Pesquisas aplicadas para aumentar a eficiência de áreas já desmatadas.</p>
+                    </div>
+                </div>
+
+                <div class="card-imagem-wrapper">
+                    <div class="imagem"> <img src="Foto4.png" alt="Conexão da inteligência artificial prevendo safras futuras ecologicamente limpas"> </div>
+                    <div class="card-info">
+                        <h3>Inovação em Pesquisa</h3>
+                        <p>Solicitação de novos estudos científicos para propostas sustentáveis do amanhã.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comentarios-section">
+            <div class="comentarios-container">
+                <h2>Espaço do Leitor</h2>
+                <p class="sub-comentario">Participe da construção do Agro Sustentável do Brasil. Deixe sua ideia ou opinião abaixo.</p>
+                
+                <form id="form-comentario" class="designer-harmonico-form">
+                    <div class="campo-grupo">
+                        <label for="texto-comentario">Seu comentário:</label>
+                        <textarea id="texto-comentario" rows="4" placeholder="Escreva aqui como a tecnologia pode apoiar sua região..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar-comentario">Enviar Comentário</button>
+                </form>
+
+                <div class="lista-comentarios" id="lista-comentarios" aria-live="polite">
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-container">
+        <div class="rodape-conteudo">
+            <div class="fontes-opinativas">
+                <h3>Minhas Fontes Opinativas &amp; Referências</h3>
+                <ul>
+                    <li>Modelagem de Conteúdo e IA: <a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" rel="noopener noreferrer">Gemini AI (Google)</a></li>
+                    <li>Princípios de Agroecologia e Tecnologias de Preservação do Meio Ambiente do Brasil (2026).</li>
+                </ul>
+            </div>
+            <div class="rodape-creditos">
+                <p>&copy; 2026 Agro Forte, Futuro Sustentável. Desenvolvido com foco em Inovação, Acessibilidade e Design Fluido.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

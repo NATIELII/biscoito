@@ -1,0 +1,196 @@
+/* ==========================================================================
+   CONFIGURAÇÃO E PALETA DE CORES PERSONALIZÁVEL (VARIÁVEIS)
+   ========================================================================== */
+:root {
+    /* Cores principais solicitadas */
+    --cor-magenta: #D10056;
+    --cor-verde: #1E5E3A;
+    --cor-azul: #0B4F6C;
+    --cor-amarelo-dourado: #F39C12;
+    
+    /* Variações de fundo e apoio */
+    --cor-vermelho-escuro: #4A051C; /* Fundo solicitado para as imagens */
+    --fundo-claro: #F9FBF9;
+    --fundo-escuro: #121814;
+    --texto-claro: #1A241E;
+    --texto-escuro: #EAEAEA;
+    --borda-elegante: 1px solid rgba(255, 255, 255, 0.15);
+    
+    /* Configuração padrão de tema dinâmico */
+    --bg-atual: var(--fundo-claro);
+    --texto-atual: var(--texto-claro);
+    
+    /* Fontes base baseadas em clamp() para responsividade fluida */
+    --font-base-size: clamp(1rem, 0.95vw + 0.7rem, 1.25rem);
+}
+
+/* Reset Técnico Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-atual);
+    color: var(--texto-atual);
+    font-size: var(--font-base-size);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+/* Atalho para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ==========================================================================
+   CAIXA FLUTUANTE DE ACESSIBILIDADE
+   ========================================================================== */
+.acessibilidade-container {
+    position: fixed;
+    top: 20%;
+    left: 15px;
+    z-index: 1000;
+    background-color: var(--cor-azul);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.4s ease;
+}
+
+.acessibilidade-container.direita {
+    left: auto;
+    right: 15px;
+}
+
+.btn-acessibilidade {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-amarelo-dourado);
+    background-color: #ffffff;
+    color: var(--cor-azul);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.btn-acessibilidade:hover, .btn-acessibilidade:focus {
+    transform: scale(1.15);
+    background-color: var(--cor-amarelo-dourado);
+    color: #ffffff;
+    outline: none;
+}
+
+/* ==========================================================================
+   FORMULÁRIO E TOPO IA (ACIMA DA PÁGINA)
+   ========================================================================== */
+.topo-ia-container {
+    background: linear-gradient(135deg, var(--cor-azul), #052330);
+    color: #ffffff;
+    padding: clamp(2rem, 4vw, 4rem) 5%;
+    border-bottom: 5px solid var(--cor-amarelo-dourado);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.topo-conteudo {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.ia-info-bloco h2 {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    color: var(--cor-amarelo-dourado);
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.badge-tech {
+    background-color: var(--cor-magenta);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.formulario-inscricao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    border: var(--borda-elegante);
+}
+
+.formulario-inscricao input[type="email"] {
+    flex: 1;
+    min-width: 240px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    font-size: 1rem;
+}
+
+.formulario-inscricao input[type="email"]:focus {
+    outline: none;
+    border-color: var(--cor-amarelo-dourado);
+}
+
+.btn-moderno {
+    background-color: var(--cor-magenta);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(209, 0, 86, 0.4);
+}
+
+.btn-moderno:hover {
+    background-color: #aa0043;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    padding: clamp(4rem, 10vw, 12rem) 5%;
+    text-align: center;
+    background-color: var(--cor-verde);
+    /* Fundo degradê simulando força do campo e tecnologia */
+    background: linear-gradient(180deg, rgba(30,94,58,0
